@@ -12,24 +12,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+</div>
     <div class="api-section">
-        <h1>
-            Part 1: Random Dog Generator
-        </h1>
-        <div class="api-content">
-            [INSERT RANDOM DOG GENERATOR HERE]
+        <h3>Part 1: Random Dog Generator</h3>
+        <div class="card" style="width: 18rem;">
+        <img src="#" class="card-img-top" id='dog-image' alt="#">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Whozza good boy?</h5>
+                <p class="card-text"></p>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary" type="button" id='random-dog'>Fetch Gog</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="api-section">
-        <h1>
-            Part 2: Weather App
-        </h1>
+        <h1>Part 2: Weather App</h1>
         <div class="api-content">
-            [INSERT WEATHER APP HERE]
+            <form>
+                <div class="mb-3">
+                    <label for="city" class="form-label">Enter City</label>
+                    <input type="form-control" class="form-control" rows="1" id="city" aria-describedby="emailHelp">
+                </div>
+                <button type="button" class="btn btn-outline-primary" id='weather-button'>Submit</button>
+            </form>
+            <div class="weather-info">
+                <p class="temp"></p>
+                <p class="wind"></p>
+                <p class="description"></p>
+            </div>
         </div>
-    </div>
 
     <script src="main.js"></script>
 </body>
